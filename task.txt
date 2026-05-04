@@ -1,0 +1,3 @@
+# RUN dự án
+g++ main.cpp sinhvien/sinhvien.cpp fileio/fileio.cpp chucNang/chucNang.cpp -o main.exe; .\main.exe
+

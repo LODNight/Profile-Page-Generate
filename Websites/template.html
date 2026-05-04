@@ -1,0 +1,65 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../personal.css" />
+    <title>HCMUS - {{hoTen}}</title>
+</head>
+
+<body>
+    <div class="Layout_container">
+        <div class="Layout_MainContents">
+            <!-- Begin MainContain -->
+            <div class="MainContain">
+                <div class="MainContain_Top">
+
+                    <!-- Begin Banner Region -->
+                    <div class="PersonalAddress">
+                        {{hinhAnhBlock}}
+                        <div class="Personal_Location">
+                            <div class="Personal_FullName">{{hoTenHoa}} - {{mssv}}</div>
+                            <div class="Personal_Position">{{khoaHoa}}</div>
+                            <br />
+                            {{emailPhoneBlock}}
+                        </div>
+                    </div>
+                    <!-- End Banner Region -->
+
+                    <div class="InfoGroup">Thong tin ca nhan</div>
+                    <div class="MainContain_Center">
+                        <ul class="TextInList">
+                            <li>Ho va ten: {{hoTen}}</li>
+                            <li>MSSV: {{mssv}}</li>
+                            <li>Khoa: {{khoa}}</li>
+                            <li>Khoa nam: {{khoaNam}}</li>
+                            {{ngaySinhBlock}}
+                            {{emailInfoBlock}}
+                        </ul>
+                    </div>
+
+                    {{soThichBlock}}
+                    {{moTaBlock}}
+                </div>
+            </div>
+        </div>
+
+        <!-- Begin Footer -->
+        <div class="Layout_Push"></div>
+        <div class="Layout_Footer">
+            <div class="divCopyright">
+                <br /><br />
+                2024<br />
+                Do an giua ky<br />
+                Ky thuat Lap trinh<br />
+                {{namHoc}}<br />
+                {{mssvSinhVienThucHien}} - {{tenSinhVienThucHien}}<br />
+            </div>
+        </div>
+        <!-- End Footer -->
+
+    </div>
+</body>
+
+</html>
