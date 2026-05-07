@@ -21,7 +21,7 @@ void chuoiInHoa(char* dest, const char* src, int size) {
 // replacePlaceholder()
 //  Chuc nang: Thay the tat ca chuoi placeholder thanh repl trong noi dung html
 void replacePlaceholder(char* html, const char* placeholder, const char* repl) {
-    char buffer[16384]; // Bo dem tam thoi, 16KB la du cho HTML don gian
+    char buffer[16384]; 
     char* insert_point = &buffer[0];
     const char* tmp = html;
     size_t needle_len = strlen(placeholder);
@@ -102,9 +102,9 @@ void generateHTML(const SinhVien* sv, const Config* cfg, const char* outputDir) 
     if (cfg->showHinhAnh) {
         snprintf(hinhAnhBlock, sizeof(hinhAnhBlock),
             "          <div class=\"Personal_HinhcanhanKhung\">\n"
-            "            <img src=\"../images/%s.jpg\" class=\"Personal_Hinhcanhan\"\n"
+            "            <img src=\"../images/img.jpg\" class=\"Personal_Hinhcanhan\"\n"
             "                 alt=\"Hinh %s\" />\n"
-            "          </div>", sv->mssv, sv->hoTen);
+            "          </div>", sv->hoTen);
     }
 
     if (cfg->showEmail) {
